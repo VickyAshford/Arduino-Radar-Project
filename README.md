@@ -37,7 +37,7 @@ Connect the hardware:
 - **Servo**: Signal → Pin 9, VCC → 5V, GND → GND
 - **HC-SR04**: TRIG → Pin 10, ECHO → Pin 11, VCC → 5V, GND → GND
 
-Upload `servo_and_hcsr04.ino` to your Arduino.
+Upload `servo_and_hcsr.ino` to your Arduino.
 
 Open Serial Monitor (9600 baud) to verify readings.
 
@@ -47,7 +47,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Update the COM port in `radar_display.py`:
+Update the COM port in `radar_code.py`:
 ```python
 PORT_NAME = "COM3"  # Change to your Arduino port
 ```
@@ -60,7 +60,7 @@ python radar_code.py
 ## 📁 Project Structure
 ```
 ├── arduino/
-│   └── servo_and_hcsr04.ino      # Arduino code for sensor & servo control
+│   └── servo_and_hcsr.ino      # Arduino code for sensor & servo control
 ├── python/
 │   └── radar_code.py          # Python PyGame radar visualization
 ├── requirements.txt              # Python dependencies
@@ -116,5 +116,7 @@ Have questions or suggestions? Reach out via:
 - **Telegram**: 💬 @Victory_Overflow
 
 You can also open an issue in the repository for technical questions.
+
+**⭐ If you find this project useful, please give it a star! ⭐**
 
 
